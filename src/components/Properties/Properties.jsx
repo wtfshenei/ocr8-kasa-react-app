@@ -3,7 +3,7 @@ import logements from "../../assets/logements.json"
 import Card from './Card/Card';
 
 const Properties = () => {
-    const [dataProperties, setDataProperties] = useState(logements);
+    const [dataProperties] = useState(logements);
 
     return (
         <div className='properties-container'>

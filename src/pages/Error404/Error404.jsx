@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 
-const Error_404 = () => {
+const Error404 = () => {
     return (
         <div>
             <Header />
@@ -10,4 +10,4 @@ const Error_404 = () => {
     );
 };
 
-export default Error_404;
+export default Error404;

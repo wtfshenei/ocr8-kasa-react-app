@@ -5,5 +5,14 @@
 @import "../components/Header/Header.module.scss";
 @import "../components/Header/Navigation/Navigation.module.scss";
 
-//BANNER
+// LOGO
+@import "../components/Logo/Logo.module.scss";
+
+// BANNER
 @import "../components/Banner/Banner.module.scss";
+
+// PROPERTIES
+@import "../components/Properties/Properties.module.scss";
+
+// FOOTER
+@import "../components/Footer/Footer.module.scss";

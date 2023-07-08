@@ -8,6 +8,11 @@
 $font1 : "font-1", sans-serif;
 
 $color1 : #FF6060;
+$color2 : #FFF;
+
+$bg-color1 : #FFF;
+$bg-color2 : #F6F6F6;
+$bg-color3 : #000000;
 
 // GLOBAL
 * {
@@ -19,6 +24,7 @@ $color1 : #FF6060;
 
 body {
     font-family: $font1;
+    background-color: $bg-color1;
 }
 
 a {

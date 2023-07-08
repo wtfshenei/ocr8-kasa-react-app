@@ -1,0 +1,9 @@
+// GENERAL
+@import "./settings";
+
+// HEADER
+@import "../components/Header/Header.module.scss";
+@import "../components/Header/Navigation/Navigation.module.scss";
+
+//BANNER
+@import "../components/Banner/Banner.module.scss";

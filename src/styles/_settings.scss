@@ -1,0 +1,30 @@
+// SPECIAL
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+// VARIABLES
+$font1 : "font-1", sans-serif;
+
+$color1 : #FF6060;
+
+// GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+body {
+    font-family: $font1;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

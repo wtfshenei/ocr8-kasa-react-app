@@ -1,0 +1,39 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color1;
+
+    span {
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 411px;
+        letter-spacing: 0em;
+        margin-top: 60px;
+    }
+
+    .error-p {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    button {
+        font-family: $font1;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        border: none;
+        background: none;
+        text-decoration: underline;
+        color: $color1;
+        margin-bottom: 145px;
+        cursor: pointer;
+    }
+
+}

@@ -1,17 +1,17 @@
-import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { useParams } from 'react-router-dom';
+import logements from "../../assets/logements.json"
+// import { useParams } from 'react-router-dom';
 
 
-const Housing = () => {
-    const {id} = useParams();
+const Housing = ({ id }) => {
+    // const id = useParams()
+    const house = logements.find((house) => house.id === id)
 
     return (
         <div>
             <Header />
-            <h1>Page de {id}</h1>
-            {console.log(id)}
+            {console.log(house)}
             <Footer />
         </div>
     );

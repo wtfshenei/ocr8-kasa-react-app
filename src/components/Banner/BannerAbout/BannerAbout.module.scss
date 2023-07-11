@@ -1,4 +1,4 @@
-.banner {
+.banner-about {
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,25 +11,12 @@
         border-radius: 25px;
     }
 
-    .background {
+    .filter {
         position: absolute;
         top: 0;
         width: 80%;
         height: 223px;
         border-radius: 25px;
         background: rgba(0, 0, 0, 0.3);
-
-        h1 {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-content: center;
-            color: $color2;
-            font-size: 48px;
-            font-weight: 500;
-            line-height: 68px;
-            letter-spacing: 0em;
-        }
     }
 }

@@ -15,6 +15,13 @@
 @import "../components/Properties/Properties.module.scss";
 @import "../components/Properties/Card/Card.module.scss";
 
+// COLLAPSE
+@import "../components/Collapse/Collapse.module.scss";
+
+// ABOUT
+@import "../pages/About/About.module.scss";
+@import "../components/Banner/BannerAbout/BannerAbout.module.scss";
+
 // ERROR 404
 @import "../pages/Error404/Error404.module.scss";
 

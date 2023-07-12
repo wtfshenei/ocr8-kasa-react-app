@@ -18,6 +18,12 @@
 // COLLAPSE
 @import "../components/Collapse/Collapse.module.scss";
 
+// HOUSING
+@import "../pages/Housing/Housing.module.scss";
+@import "../pages/Housing/Tag/Tag.module.scss";
+@import "../pages/Housing/Rating/Rating.module.scss";
+@import "../pages/Housing/Carousel/Carousel.module.scss";
+
 // ABOUT
 @import "../pages/About/About.module.scss";
 @import "../components/Banner/BannerAbout/BannerAbout.module.scss";

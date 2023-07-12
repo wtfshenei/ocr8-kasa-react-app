@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
+import arrowDown from "./arrow_down.png";
+import arrowUp from "./arrow_up.png";
 
 const Collapse = ({ title, desc }) => {
   const [open, setOpen] = useState(false);
@@ -14,16 +16,11 @@ const Collapse = ({ title, desc }) => {
   }, [open]);
 
   return (
-    <div className="toggle">
-      <div className="top" onClick={handleToggle}>
-        <h2>{title}</h2>
-        <button>
-          <img
-            src={
-              open ? "./assets/img/arrow_down.png" : "./assets/img/arrow_up.png"
-            }
-            alt="Flèche"
-          />
+    <li className="toggle">
+      <div className="top">
+        <h3>{title}</h3>
+        <button onClick={handleToggle}>
+          <img src={open ? arrowDown : arrowUp} alt="Flèche" />
         </button>
       </div>
       <div
@@ -31,9 +28,13 @@ const Collapse = ({ title, desc }) => {
         style={{ maxHeight: contentHeight }}
         ref={contentRef}
       >
-        {desc}
+        {Array.isArray(desc) ? (
+          desc.map((item, index) => <p key={`item_${index}`}>{item}</p>)
+        ) : (
+          <p>{desc}</p>
+        )}
       </div>
-    </div>
+    </li>
   );
 };
 

@@ -32,7 +32,7 @@ const About = () => {
     <div>
       <Header />
       <BannerAbout />
-      <div className="about-display">
+      <ul className="about-display">
         {aboutContent.map((content) => (
           <Collapse
             key={content.id}
@@ -40,7 +40,7 @@ const About = () => {
             desc={content.desc}
           />
         ))}
-      </div>
+      </ul>
       <Footer />
     </div>
   );

@@ -1,0 +1,16 @@
+.stars-display {
+    display: flex;
+
+    .fullstar {
+        width: 24px;
+        height: 24px;
+        color: $color1;
+    }
+
+    .emptystar {
+        width: 24px;
+        height: 24px;
+        color: $color3;
+    }
+
+}

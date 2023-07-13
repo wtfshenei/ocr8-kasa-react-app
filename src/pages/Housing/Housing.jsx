@@ -22,12 +22,12 @@ const Housing = ({ id }) => {
             <p className="place">{house.location}</p>
           </div>
           <div className="host">
-            <p className="host-name">{house.host.name}</p>
             <img
               className="portrait"
               src={house.host.picture}
               alt={house.host.name}
             />
+            <p className="host-name">{house.host.name}</p>
           </div>
         </div>
         <div className="details">

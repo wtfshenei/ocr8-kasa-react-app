@@ -55,3 +55,30 @@
     }
 
 }
+
+
+@media (max-width: 425px) {
+    .toggle {
+        .top {
+            height: 33px;
+
+            h3 {
+                font-size: 13px;
+                line-height: 18px;
+            }
+
+            img {
+                width: 16px;
+                height: 9px;
+            }
+        }
+
+        .bottom {
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+    }
+}

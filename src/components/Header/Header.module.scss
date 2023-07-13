@@ -24,3 +24,12 @@
         }
     }
 }
+
+
+@media (max-width: 320px) {
+    .header-container {
+        svg {
+            width: 135px;
+        }
+    }
+}

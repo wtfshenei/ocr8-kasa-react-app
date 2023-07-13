@@ -22,3 +22,20 @@
         bottom: 0;
     }
 }
+
+
+@media (max-width: 425px) {
+    .footer-container {
+        svg {
+            margin-top: 50px;
+        }
+
+        p {
+            margin-bottom: 35px;
+            width: 30%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}

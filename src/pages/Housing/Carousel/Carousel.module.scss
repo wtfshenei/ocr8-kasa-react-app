@@ -52,3 +52,27 @@
         letter-spacing: 0em;
       }
 }
+
+
+@media (max-width: 425px) {
+    .carousel-container {
+        .arrow-positioning {
+            .arrow {
+                width: 24px;
+                height: 24px;
+            }
+
+            .arrow-left {
+                top: 120px;
+            }
+
+            .arrow-right {
+                top: 120px;
+            }
+        }
+
+        .compteur-container {
+            display: none;
+        }
+    }
+}

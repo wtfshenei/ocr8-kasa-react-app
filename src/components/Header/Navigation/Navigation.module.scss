@@ -21,3 +21,19 @@
         color: $color1;
     }
 }
+
+
+@media (max-width: 425px) {
+    .navigation {
+        ul {
+            width: 160px;
+            justify-content: space-around;
+        }
+
+        li {
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+    }
+}

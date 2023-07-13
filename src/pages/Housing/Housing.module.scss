@@ -19,6 +19,7 @@
         .place {
             margin-top: 10px;
             margin-bottom: 20px;
+            width: 100%;
         }
     
         .host {
@@ -73,6 +74,63 @@
 
         .collapse-display {
             width: 47%;
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .house-container {
+        width: 90%;
+
+        img {
+            height: 255px;
+        }
+
+        .infos {
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 0;
+
+            .place {
+                margin-bottom: 0;
+            }
+        }
+
+        .collapse-housing {
+            flex-direction: column;
+            margin-top: 30px;
+
+            .collapse-display {
+                width: 100%;
+            }
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            
+            .rating {
+                position: inherit;
+                top: 250px;
+            }
+        }
+
+        .host {
+            position: inherit;
+            top: 75px;
+            width: 60%;
+            align-self: flex-end;
+
+            .host-name {
+                width: 10%;
+                right: 110px;
+                top: 3px;
+            }
+
+            .portrait {
+                top: -5px;
+            }
         }
     }
 }

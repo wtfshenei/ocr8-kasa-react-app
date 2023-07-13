@@ -12,3 +12,11 @@
         flex-wrap: wrap;
     }
 }
+
+
+@media (max-width: 425px) {
+    .properties-container {
+        width: 90%;
+        background-color: $bg-color1;
+    }
+}

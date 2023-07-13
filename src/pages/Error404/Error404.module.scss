@@ -37,3 +37,27 @@
     }
 
 }
+
+
+@media (max-width: 425px) {
+    .error-container {
+        width: 75%;
+        margin: 0 auto;
+
+        span {
+            font-size: 96px;
+            line-height: 137px;
+        }
+
+        .error-p {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

@@ -29,3 +29,22 @@
     }
 
 }
+
+
+@media (max-width: 425px) {
+    .card {
+        height: 255px;
+        width: 100%;
+        margin: 10px 0;
+
+        img {
+            height: 255px;
+            width: 100%;
+        }
+
+        .gradient {
+            height: 255px;
+            width: 100%;
+        }
+    }
+}

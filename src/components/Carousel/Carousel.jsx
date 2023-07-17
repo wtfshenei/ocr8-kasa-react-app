@@ -5,26 +5,32 @@ import arrowRight from "./arrow_right.png";
 const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const previousSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((nextSlide) =>
-      nextSlide === pictures.length - 1 ? 0 : nextSlide + 1
-    );
+  const slideNavigation = (direction) => {
+    if (direction === "left") {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
+      );
+    } else if (direction === "right") {
+      setCurrentSlide((nextSlide) =>
+        nextSlide === pictures.length - 1 ? 0 : nextSlide + 1
+      );
+    }
   };
 
   return (
     <div className="carousel-container">
       {pictures.length > 1 && (
         <div className="arrow-positioning">
-          <button className="arrow-left" onClick={previousSlide}>
+          <button
+            className="arrow-left"
+            onClick={() => slideNavigation("left")}
+          >
             <img src={arrowLeft} alt="Flèche gauche" className="arrow" />
           </button>
-          <button className="arrow-right" onClick={nextSlide}>
+          <button
+            className="arrow-right"
+            onClick={() => slideNavigation("right")}
+          >
             <img src={arrowRight} alt="Flèche droite" className="arrow" />
           </button>
         </div>

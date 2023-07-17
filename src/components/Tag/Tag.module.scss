@@ -1,0 +1,28 @@
+.tag-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 115px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: $color1;
+    color: $color2;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 425px) {
+    .tag-display {
+        width: 84px;
+        height: 18px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

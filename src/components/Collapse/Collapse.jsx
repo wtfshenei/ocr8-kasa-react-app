@@ -7,22 +7,18 @@ const Collapse = ({ title, desc }) => {
   const contentRef = useRef(null);
   const [contentHeight, setContentHeight] = useState(0);
 
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
   useEffect(() => {
     setContentHeight(open ? contentRef.current.scrollHeight + 10 : 0);
   }, [open]);
 
   return (
     <li className="toggle">
-      <div className="top">
-        <h3>{title}</h3>
-        <button onClick={handleToggle}>
+      <button className="top" onClick={() => setOpen(!open)}>
+        <label>{title}</label>
+        <div className="img-collapse">
           <img src={open ? arrowDown : arrowUp} alt="Flèche" />
-        </button>
-      </div>
+        </div>
+      </button>
       <div
         className={`bottom ${open ? "active" : ""}`}
         style={{ maxHeight: contentHeight }}

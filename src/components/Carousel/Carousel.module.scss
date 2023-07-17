@@ -1,0 +1,80 @@
+.carousel-container {
+    display: flex;
+    position: relative;
+    
+    .arrow-positioning {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        button {
+            border: none;
+            background: none;
+        }
+        
+        .arrow {
+            width: 47px;
+            height: 80px;
+            cursor: pointer;
+        }
+    
+        .arrow-left {
+            position: absolute;
+            left: 30px;
+            top: 180px;
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: 30px;
+            top: 180px;
+        }
+    }
+
+    .slide {
+        display: flex;
+        width: 100%;
+    }
+
+    .compteur-container {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .compteur {
+        color: $color2;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+      }
+}
+
+
+@media (max-width: 425px) {
+    .carousel-container {
+        .arrow-positioning {
+            .arrow {
+                width: 24px;
+                height: 24px;
+            }
+
+            .arrow-left {
+                top: 120px;
+                left: 15px;
+            }
+
+            .arrow-right {
+                top: 120px;
+                right: 15px;
+            }
+        }
+
+        .compteur-container {
+            display: none;
+        }
+    }
+}

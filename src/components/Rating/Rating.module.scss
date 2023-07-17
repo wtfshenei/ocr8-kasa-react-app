@@ -1,0 +1,30 @@
+.stars-display {
+    display: flex;
+
+    .fullstar {
+        width: 24px;
+        height: 24px;
+        color: $color1;
+    }
+
+    .emptystar {
+        width: 24px;
+        height: 24px;
+        color: $color3;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .fullstar {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .emptystar {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+}

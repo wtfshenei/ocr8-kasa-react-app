@@ -43,6 +43,7 @@
     .error-container {
         width: 75%;
         margin: 0 auto;
+        min-height: calc(100vh - 332px);
 
         span {
             font-size: 96px;

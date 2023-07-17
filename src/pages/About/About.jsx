@@ -30,17 +30,19 @@ const About = () => {
 
   return (
     <div>
-      <Header />
-      <BannerAbout />
-      <ul className="about-display">
-        {aboutContent.map((content) => (
-          <Collapse
-            key={content.id}
-            title={content.title}
-            desc={content.desc}
-          />
-        ))}
-      </ul>
+      <div className="about-container">
+        <Header />
+        <BannerAbout />
+        <ul className="about-display">
+          {aboutContent.map((content) => (
+            <Collapse
+              key={content.id}
+              title={content.title}
+              desc={content.desc}
+            />
+          ))}
+        </ul>
+      </div>
       <Footer />
     </div>
   );

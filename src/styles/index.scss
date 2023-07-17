@@ -20,9 +20,9 @@
 
 // HOUSING
 @import "../pages/Housing/Housing.module.scss";
-@import "../pages/Housing/Tag/Tag.module.scss";
-@import "../pages/Housing/Rating/Rating.module.scss";
-@import "../pages/Housing/Carousel/Carousel.module.scss";
+@import "../components/Tag/Tag.module.scss";
+@import "../components/Rating/Rating.module.scss";
+@import "../components/Carousel/Carousel.module.scss";
 
 // ABOUT
 @import "../pages/About/About.module.scss";

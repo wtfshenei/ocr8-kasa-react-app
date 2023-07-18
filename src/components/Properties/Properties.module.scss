@@ -1,22 +1,21 @@
 .properties-container {
-    width: 80%;
-    background-color: $bg-color2;
-    margin: 0 auto 35px auto;
-    border-radius: 25px;
-    padding-bottom: 10px;
+  width: 80%;
+  background-color: $bg-color2;
+  margin: 0 auto 35px auto;
+  border-radius: 25px;
+  padding-bottom: 10px;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
-
 @media (max-width: 425px) {
-    .properties-container {
-        width: 90%;
-        background-color: $bg-color1;
-    }
+  .properties-container {
+    width: 90%;
+    background-color: $bg-color1;
+  }
 }

@@ -1,83 +1,81 @@
 .toggle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  .top {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    background-color: $color1;
+    border-radius: 10px;
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    color: $color2;
+    border: none;
 
+    label {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    img {
+      width: 24px;
+      height: 13px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    background-color: $bg-color2;
+    color: $color1;
+    border-radius: 5px 5px 10px 10px;
+    overflow: hidden;
+    padding: 25px 25px;
+    opacity: 1;
+    animation: fadeIn ease-in-out 0.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .toggle {
     .top {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        flex-wrap: wrap;
-        background-color: $color1;
-        border-radius: 10px;
-        width: 100%;
-        height: 52px;
-        padding: 0 15px;
-        color: $color2;
-        border: none;
+      height: 33px;
 
-        label {
-            font-size: 24px;
-            line-height: 34px;
-        }
-        
-        img {
-            width: 24px;
-            height: 13px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
+      label {
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      img {
+        width: 16px;
+        height: 9px;
+        margin-top: 0;
+      }
     }
 
     .bottom {
-        width: 100%;
-        background-color: $bg-color2;
-        color: $color1;
-        border-radius: 5px 5px 10px 10px;
-        overflow: hidden;
-        padding: 25px 25px;
-        opacity: 1;
-        animation: fadeIn ease-in-out 0.5s forwards;
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+      }
     }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(-5px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-}
-
-
-@media (max-width: 425px) {
-    .toggle {
-        .top {
-            height: 33px;
-
-            label {
-                font-size: 13px;
-                line-height: 18px;
-            }
-
-            img {
-                width: 16px;
-                height: 9px;
-                margin-top: 0;
-            }
-        }
-
-        .bottom {
-            p {
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 17px;
-            }
-        }
-    }
+  }
 }

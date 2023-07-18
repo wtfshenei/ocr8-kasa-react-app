@@ -1,24 +1,23 @@
 .about-container {
-    min-height: calc(100vh - 244px);
+  min-height: calc(100vh - 244px);
 
-    .about-display {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .about-display {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-
 @media (max-width: 425px) {
-    .about-container {
-        min-height: calc(100vh - 229px);
-        
-        .about-display {
-            width: 90%;
-        }   
+  .about-container {
+    min-height: calc(100vh - 229px);
+
+    .about-display {
+      width: 90%;
     }
+  }
 }

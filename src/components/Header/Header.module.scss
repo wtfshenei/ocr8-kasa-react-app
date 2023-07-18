@@ -1,35 +1,33 @@
 .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    height: 68px;
-    margin: 35px auto 35px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 68px;
+  margin: 35px auto 35px auto;
 
-    svg {
-        fill: $color1;
-    }
+  svg {
+    fill: $color1;
+  }
 }
-
 
 @media (max-width: 425px) {
-    .header-container {
-        margin-top: 20px;
-        width: 90%;
+  .header-container {
+    margin-top: 20px;
+    width: 90%;
 
-        svg {
-            width: 145px;
-            height: 46px;
-        }
+    svg {
+      width: 145px;
+      height: 46px;
     }
+  }
 }
 
-
 @media (max-width: 320px) {
-    .header-container {
-        svg {
-            width: 135px;
-        }
+  .header-container {
+    svg {
+      width: 135px;
     }
+  }
 }

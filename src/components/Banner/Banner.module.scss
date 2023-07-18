@@ -1,59 +1,60 @@
 .banner {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
 
+  img {
+    width: 80%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3);
+
+    h1 {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      text-align: center;
+      color: $color2;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 68px;
+      letter-spacing: 0em;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .banner {
     img {
-        width: 80%;
-        height: 223px;
-        object-fit: cover;
-        border-radius: 25px;
+      width: 90%;
+      height: 111px;
+      border-radius: 10px;
     }
 
     .background {
-        position: absolute;
-        top: 0;
-        width: 80%;
-        height: 223px;
-        border-radius: 25px;
-        background: rgba(0, 0, 0, 0.3);
+      width: 90%;
+      height: 111px;
+      border-radius: 10px;
 
-        h1 {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-content: center;
-            text-align: center;
-            color: $color2;
-            font-size: 48px;
-            font-weight: 500;
-            line-height: 68px;
-            letter-spacing: 0em;
-        }
+      h1 {
+        width: 59%;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        margin-left: 20px;
+      }
     }
-}
-
-
-@media (max-width: 425px) {
-    .banner {
-        img {
-            width: 90%;
-            height: 111px;
-        }
-
-        .background {
-            width: 90%;
-            height: 111px;
-
-            h1 {
-                width: 59%;
-                font-size: 24px;
-                line-height: 24px;
-                text-align: left;
-                margin-left: 20px;
-            }
-        }
-    }
+  }
 }

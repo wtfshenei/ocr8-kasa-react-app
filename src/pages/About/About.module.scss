@@ -1,5 +1,7 @@
 .about-container {
   min-height: calc(100vh - 244px);
+  max-width: 1440px;
+  margin: 0 auto;
 
   .about-display {
     width: 60%;

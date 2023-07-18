@@ -1,9 +1,11 @@
 .error-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: $color1;
+  min-height: calc(100vh - 209px);
+  max-width: 1440px;
+  margin: 0 auto;
 
   span {
     font-size: 288px;

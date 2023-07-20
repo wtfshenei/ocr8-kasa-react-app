@@ -4,17 +4,30 @@ import arrowUp from "./arrow_up.png";
 
 const Collapse = ({ title, desc }) => {
   const [open, setOpen] = useState(false);
+  const [checkClose, setcheckClose] = useState(false);
+
+  const handleClick = () => {
+    if (!open) {
+      setOpen(true);
+    } else {
+      setcheckClose(true);
+      setTimeout(() => {
+        setOpen(false);
+        setcheckClose(false);
+      }, 500);
+    }
+  };
 
   return (
     <li className="toggle">
-      <button className="top" onClick={() => setOpen(!open)}>
+      <button className="top" onClick={handleClick}>
         <label>{title}</label>
         <div className="img-collapse">
           <img src={open ? arrowDown : arrowUp} alt="Flèche" />
         </div>
       </button>
       {open && (
-        <div className="bottom">
+        <div className={`bottom ${checkClose ? "anim-close" : ""}`}>
           {Array.isArray(desc) ? (
             desc.map((item, index) => <p key={`item_${index}`}>{item}</p>)
           ) : (

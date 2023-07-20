@@ -16,6 +16,8 @@
     padding: 0 15px;
     color: $color2;
     border: none;
+    z-index: 1000;
+    cursor: pointer;
 
     label {
       font-size: 24px;
@@ -32,13 +34,19 @@
 
   .bottom {
     width: 100%;
+    margin-top: -10px;
     background-color: $bg-color2;
     color: $color1;
     border-radius: 5px 5px 10px 10px;
     overflow: hidden;
-    padding: 25px 25px;
-    opacity: 1;
+    padding: 35px 25px 25px 25px;
     animation: fadeIn ease-in-out 0.5s forwards;
+    z-index: 500;
+  }
+
+  .anim-close {
+    animation: fadeOut ease-in-out 0.5s forwards;
+    // animation-direction: reverse;
   }
 
   @keyframes fadeIn {
@@ -49,6 +57,17 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-5px);
     }
   }
 }

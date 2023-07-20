@@ -30,6 +30,7 @@
       left: 15px;
       margin-right: 10px;
       color: $color2;
+      overflow: hidden;
     }
   }
 }
@@ -44,11 +45,11 @@
 @media only screen and (max-width: 768px) {
   .card {
     height: 270px;
-    width: 25%;
+    width: 27%;
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+@media only screen and (min-width: 450px) and (max-width: 767px) {
   .card {
     height: 210px;
     width: 24%;

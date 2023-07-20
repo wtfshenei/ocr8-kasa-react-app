@@ -35,6 +35,11 @@
   .slide {
     display: flex;
     width: 100%;
+    transition: opacity ease-in-out 0.5s;
+  }
+
+  .fade-out {
+    opacity: 0;
   }
 
   .compteur-container {

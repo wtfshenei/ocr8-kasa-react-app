@@ -4,17 +4,22 @@ import arrowRight from "./arrow_right.png";
 
 const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [animSlide, setAnimSlide] = useState(false);
 
   const slideNavigation = (direction) => {
-    if (direction === "left") {
-      setCurrentSlide((prevSlide) =>
-        prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
-      );
-    } else if (direction === "right") {
-      setCurrentSlide((nextSlide) =>
-        nextSlide === pictures.length - 1 ? 0 : nextSlide + 1
-      );
-    }
+    setAnimSlide(true);
+    setTimeout(() => {
+      setAnimSlide(false);
+      if (direction === "left") {
+        setCurrentSlide((prevSlide) =>
+          prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
+        );
+      } else if (direction === "right") {
+        setCurrentSlide((nextSlide) =>
+          nextSlide === pictures.length - 1 ? 0 : nextSlide + 1
+        );
+      }
+    }, 500);
   };
 
   return (
@@ -35,7 +40,7 @@ const Carousel = ({ pictures }) => {
           </button>
         </div>
       )}
-      <div className="slide">
+      <div className={`slide ${animSlide ? "fade-out" : ""}`}>
         <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
       </div>
       <div className="compteur-container">

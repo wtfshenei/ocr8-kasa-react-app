@@ -16,7 +16,7 @@
   margin-right: 10px;
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .tag-display {
     width: 84px;
     height: 18px;

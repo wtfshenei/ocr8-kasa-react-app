@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .header-container {
     margin-top: 20px;
     width: 90%;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .header-container {
     svg {
       width: 135px;

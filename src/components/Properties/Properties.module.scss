@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .properties-container {
     width: 90%;
     background-color: $bg-color1;

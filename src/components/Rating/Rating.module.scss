@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .fullstar {
     width: 18px;
     height: 18px;

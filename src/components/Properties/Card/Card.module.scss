@@ -34,14 +34,28 @@
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  .card {
+    height: 290px;
+    width: 28%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .card {
     height: 270px;
     width: 25%;
   }
 }
 
-@media (max-width: 425px) {
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+  .card {
+    height: 210px;
+    width: 24%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
   .card {
     height: 255px;
     width: 100%;

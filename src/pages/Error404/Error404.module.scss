@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .error-container {
     width: 75%;
     margin: 0 auto;

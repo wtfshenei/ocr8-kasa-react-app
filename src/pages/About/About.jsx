@@ -5,6 +5,9 @@ import Collapse from "../../components/Collapse/Collapse";
 import BannerAbout from "../../components/Banner/BannerAbout/BannerAbout";
 
 const About = () => {
+  /**
+   * Contenu pour les composants Collapse de la page A Propos.
+   **/
   const aboutContent = [
     {
       id: "about1",

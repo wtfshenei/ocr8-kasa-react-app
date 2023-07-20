@@ -4,6 +4,11 @@ const Rating = ({ rating }) => {
   const fullStars = rating;
   const emptyStars = 5 - fullStars;
 
+  /**
+   * Comptabilise puis insère les étoiles pleines dans la variable stars.
+   * Comptabilise puis insère les étoiles vides dans la variable stars.
+   * Retourne le résultat afin d'afficher graphiquement la notation.
+   **/
   const displayStars = () => {
     const stars = [];
 

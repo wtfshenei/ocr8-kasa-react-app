@@ -6,6 +6,10 @@ const Collapse = ({ title, desc }) => {
   const [open, setOpen] = useState(false);
   const [checkClose, setcheckClose] = useState(false);
 
+  /**
+   * Ouvre le composant si il est fermé.
+   * Lance l'animation de fermeture puis ferme le composant au bout de 500ms si ce dernier est ouvert.
+   **/
   const handleClick = () => {
     if (!open) {
       setOpen(true);

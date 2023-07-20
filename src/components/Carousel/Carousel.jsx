@@ -6,6 +6,11 @@ const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animSlide, setAnimSlide] = useState(false);
 
+  /**
+   * Change la slide du carousel en fonction du sens de la flèche cliquée.
+   * Boucle le carousel si à une limite de longueur du tableau contenant les images.
+   * Active puis désactive au bout de 500ms l'animation de changement de slide.
+   **/
   const slideNavigation = (direction) => {
     setAnimSlide(true);
     setTimeout(() => {

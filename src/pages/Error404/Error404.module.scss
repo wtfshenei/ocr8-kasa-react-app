@@ -41,9 +41,9 @@
 
 @media only screen and (max-width: 425px) {
   .error-container {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    min-height: calc(100vh - 332px);
+    min-height: calc(100vh - 209px);
 
     span {
       font-size: 96px;
@@ -51,14 +51,22 @@
     }
 
     .error-p {
+      display: flex;
       font-size: 18px;
       line-height: 26px;
       text-align: center;
+      margin-top: 200px;
+      width: 52%;
     }
 
-    button {
-      font-size: 14px;
-      line-height: 20px;
+    .error-link {
+      height: 25px;
+
+      button {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 180px;
+      }
     }
   }
 }

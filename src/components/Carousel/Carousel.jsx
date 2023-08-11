@@ -50,7 +50,7 @@ const Carousel = ({ pictures }) => {
       </div>
       <div className="compteur-container">
         <p className="compteur">
-          {currentSlide + 1}/{pictures.length}
+          {pictures.length > 1 ? `${currentSlide + 1}/${pictures.length}` : ""}
         </p>
       </div>
     </div>

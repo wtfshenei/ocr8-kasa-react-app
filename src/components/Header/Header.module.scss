@@ -5,7 +5,7 @@
   align-items: center;
   width: 80%;
   height: 68px;
-  margin: 35px auto 35px auto;
+  margin: 35px auto 50px auto;
 
   svg {
     fill: $color1;
@@ -15,6 +15,7 @@
 @media only screen and (max-width: 425px) {
   .header-container {
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 90%;
 
     svg {

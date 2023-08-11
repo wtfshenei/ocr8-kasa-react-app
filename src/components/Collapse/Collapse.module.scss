@@ -30,6 +30,16 @@
       margin-top: 10px;
       cursor: pointer;
     }
+
+    .rotate180 {
+      transition: transform 0.5s ease-in-out;
+      transform: rotate(-180deg);
+    }
+
+    .rotate-reset {
+      transition: transform 0.3s ease-in-out;
+      transform: rotate(-0deg);
+    }
   }
 
   .bottom {
@@ -45,7 +55,7 @@
   }
 
   .anim-close {
-    animation: fadeOut ease-in-out 0.5s forwards;
+    animation: fadeOut ease-in-out 0.5s forwards 0.5s;
     // animation-direction: reverse;
   }
 

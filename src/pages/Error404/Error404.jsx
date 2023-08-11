@@ -10,7 +10,7 @@ const Error404 = () => {
         <Header />
         <span className="error">404</span>
         <p className="error-p">Oups! La page que vous demandez n'existe pas.</p>
-        <Link to={"/"}>
+        <Link to={"/"} className="error-link">
           <button>Retourner sur la page d'accueil</button>
         </Link>
       </div>

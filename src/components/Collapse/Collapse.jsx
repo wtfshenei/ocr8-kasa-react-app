@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import arrowDown from "./arrow_down.png";
 import arrowUp from "./arrow_up.png";
 
 const Collapse = ({ title, desc }) => {
@@ -27,7 +26,11 @@ const Collapse = ({ title, desc }) => {
       <button className="top" onClick={handleClick}>
         <label>{title}</label>
         <div className="img-collapse">
-          <img src={open ? arrowDown : arrowUp} alt="Flèche" />
+          <img
+            src={arrowUp}
+            alt="Flèche"
+            className={open ? "rotate180" : "rotate-reset"}
+          />
         </div>
       </button>
       {open && (
